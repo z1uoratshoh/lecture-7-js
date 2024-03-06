@@ -79,3 +79,84 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0);//number
 var birthday = new Date(19283674857653);//number
 ```
 
+______________
+_______________
+_______________
+# Map() in js
+
+new Map() в JavaScript создает новый объект Map. Map представляет собой структуру данных, которая хранит коллекцию пар ключ-значение, где каждый ключ может быть любого типа, а значения могут быть любых типов данных.
+
+`Пример использования new Map():`
+
+```js
+const myMap = new Map();
+
+// Добавляем элементы в Map
+myMap.set('ключ1', 'значение1');
+myMap.set('ключ2', 'значение2');
+
+// Получаем значение по ключу
+console.log(myMap.get('ключ1')); // Вывод: значение1
+
+// Проверяем, существует ли ключ в Map
+console.log(myMap.has('ключ2')); // Вывод: true
+
+// Удаляем элемент из Map
+myMap.delete('ключ1');
+
+// Проверяем размер Map
+console.log(myMap.size); // Вывод: 1
+```
+Map предоставляет удобный способ хранить и манипулировать данными в виде пар ключ-значение, и он может быть использован для различных задач, таких как кэширование, сохранение порядка элементов и др.
+
+* `new Map()`  ////  `	Creates a new Map`
+
+* `set()`	////`Sets the value for a key in a Map`
+
+* `get()`/// `Gets the value for a key in a Map`
+* `delete()`///	`Removes a Map element specified by the key`
+* `has()`  ///`Returns true if a key exists in a Map`
+* `forEach()` ///	`Calls a function for each key/value pair in a Map`
+* `entries()` ///	`Returns an iterator with the [key, value] pairs in a Map`
+  
+
+
+# Set in js
+
+  new Set() в JavaScript создает новый объект Set. Set представляет собой коллекцию уникальных значений любого типа, как примитивных, так и объектов. Каждое значение в Set встречается только один раз; оно уникально в рамках всего набора.
+  ```js
+  const mySet = new Set();
+
+// Добавляем значения в Set
+mySet.add(1);
+mySet.add(2);
+mySet.add(3);
+mySet.add(2); // Повторяющееся значение, не добавится
+
+// Получаем размер Set
+console.log(mySet.size); // Вывод: 3
+
+// Проверяем, содержит ли Set значение
+console.log(mySet.has(2)); // Вывод: true
+
+// Удаляем значение из Set
+mySet.delete(2);
+
+// Получаем массив значений из Set
+const valuesArray = Array.from(mySet);
+console.log(valuesArray); // Вывод: [1, 3]
+  ```
+
+Set предоставляет простой способ хранения уникальных значений и обеспечивает быстрый доступ и проверку наличия элементов.
+
+
+* `new set()`  ////  `	Creates a new Map`
+
+* `add()`	////`Sets the value for a key in a Map`
+
+* `get()`/// `Gets the value for a key in a Map`
+* `delete()`///	`Removes a Map element specified by the key`
+* `has()`  ///`Returns true if a key exists in a Map`
+* `forEach()` ///	`Calls a function for each key/value pair in a Map`
+* `velius()` ///	`Returns an iterator with the [key, value] pairs in a Map`
+  
